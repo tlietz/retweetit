@@ -1,9 +1,9 @@
 import tweepy
 
-from constants import *
+from client_secrets import *
 
 auth = tweepy.OAuth1UserHandler(
-    consumer_key, consumer_secret, access_token, access_token_secret
+    API_KEY, API_KEY_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET
 )
 
 api = tweepy.API(auth)
